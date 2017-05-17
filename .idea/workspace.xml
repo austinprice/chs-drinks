@@ -2,189 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af0fe901-f6c8-4958-b709-e8ac6ddd78de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/chs-drinks.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/node_modules_chs_drinks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/adapters/application.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/brewery-card.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/format-hours.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/brewery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/location.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/app.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/base/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/base/_type.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/_bourbon.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/helpers/_buttons-list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/helpers/_scales.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/helpers/_text-inputs-list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_border-color.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_border-radius.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_border-style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_border-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_clearfix.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_contrast-switch.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_ellipsis.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_font-face.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_font-stacks.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_hide-text.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_hide-visually.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_margin.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_modular-scale.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_padding.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_position.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_prefixer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_shade.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_size.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_strip-unit.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_text-inputs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_timing-functions.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_tint.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_triangle.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_value-prefixer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/library/_word-wrap.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/settings/_settings.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/utilities/_assign-inputs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/utilities/_collapse-directionals.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/utilities/_directional-values.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/utilities/_font-source-declaration.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/utilities/_retrieve-bourbon-setting.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/utilities/_unpack.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/validators/_contains-falsy.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/validators/_contains.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/validators/_is-color.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/validators/_is-length.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/validators/_is-light.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/validators/_is-number.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/bourbon/bourbon/validators/_is-size.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/components/_buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/components/_chevron-icon.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/components/_dividers.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/components/_inputs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/components/_logo.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/components/_nav.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/components/_power-select.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/components/_utilities.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/config/_svg-icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/config/_svg.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/config/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/layout/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/layout/_brewery-list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/layout/_filters.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/layout/_responsive.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/components/brewery-card.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/index.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/_bourbon-deprecate.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/_bourbon-deprecated-upcoming.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/_bourbon.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_border-color.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_border-radius.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_border-style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_border-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_clearfix.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_ellipsis.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_font-stacks.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_hide-text.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_margin.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_padding.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_position.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_prefixer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_retina-image.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_size.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_text-inputs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_timing-functions.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_triangle.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_word-wrap.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_animation.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_appearance.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_backface-visibility.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_background-image.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_background.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_border-image.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_calc.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_columns.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_filter.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_flex-box.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_font-face.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_font-feature-settings.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_hidpi-media-query.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_hyphens.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_image-rendering.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_keyframes.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_linear-gradient.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_perspective.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_placeholder.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_radial-gradient.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_selection.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_text-decoration.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_transform.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_transition.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_user-select.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_assign-inputs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_contains-falsy.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_contains.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_is-length.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_is-light.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_is-number.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_is-size.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_modular-scale.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_px-to-em.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_px-to-rem.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_shade.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_strip-units.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_tint.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_transition-property-name.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_unpack.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_convert-units.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_directional-values.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_font-source-declaration.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_gradient-positions-parser.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_linear-angle-parser.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_linear-gradient-parser.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_linear-positions-parser.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_linear-side-corner-parser.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_radial-arg-parser.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_radial-gradient-parser.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_radial-positions-parser.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_render-gradients.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_shape-size-stripper.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_str-to-num.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/settings/_asset-pipeline.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/settings/_deprecation-warnings.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/settings/_prefixer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/settings/_px-to-em.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mirage/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mirage/factories/brewery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mirage/fixtures/brewery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mirage/fixtures/location.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mirage/models/brewery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mirage/models/location.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mirage/scenarios/default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mirage/serializers/application.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/beer.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chs-drinks_logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/integration/components/brewery-card-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/integration/helpers/format-hours-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unit/adapters/application-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unit/controllers/index-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unit/models/brewery-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unit/models/location-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unit/routes/index-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/application.hbs" afterPath="$PROJECT_DIR$/app/templates/application.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.js" afterPath="$PROJECT_DIR$/config/environment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ember-cli-build.js" afterPath="$PROJECT_DIR$/ember-cli-build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/helpers/destroy-app.js" afterPath="$PROJECT_DIR$/tests/helpers/destroy-app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -220,11 +39,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="brewery.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="brewery.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/brewery.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="477">
               <caret line="35" column="3" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="static.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -308,6 +137,7 @@
         <option value="$PROJECT_DIR$/config/environment.js" />
         <option value="$PROJECT_DIR$/app/routes/index.js" />
         <option value="$PROJECT_DIR$/app/models/brewery.js" />
+        <option value="$PROJECT_DIR$/static.json" />
       </list>
     </option>
   </component>
@@ -533,15 +363,16 @@
       <workItem from="1494637538939" duration="8441000" />
       <workItem from="1494689561152" duration="14680000" />
       <workItem from="1494899599970" duration="8090000" />
-      <workItem from="1494970924652" duration="3037000" />
+      <workItem from="1494970924652" duration="3689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36815000" />
+    <option name="totallyTimeSpent" value="37467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -551,7 +382,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28674698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28915662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -573,13 +404,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/styles/base/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -928,6 +752,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
           <caret line="35" column="3" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding />
         </state>
       </provider>
