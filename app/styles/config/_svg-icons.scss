@@ -1,0 +1,23 @@
+// SVG Icons
+// Data URLs for SVG icons used throughout the app
+// --------------------------------------------------------------------
+
+// Chevron Icon
+@mixin chevron-icon($color) {
+  @include background-svg('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="478.4" height="385.5" viewBox="0 0 478.4 385.5">
+  <defs>
+    <clipPath id="clip-path">
+      <path d="M318.9,259.5a23.7,23.7,0,1,0,34.2-32.9L256.3,126a23.7,23.7,0,0,0-34.2,0L125.3,226.6a23.7,23.7,0,1,0,34.2,32.9l79.6-82.8Z" style="fill: none"/>
+    </clipPath>
+  </defs>
+  <title>chevron</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g style="clip-path: url(#clip-path)">
+        <rect width="478.4" height="385.51" style="fill: #8893a3"/>
+      </g>
+    </g>
+  </g>
+</svg>
+');
+}

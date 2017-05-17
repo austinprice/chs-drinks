@@ -1,0 +1,43 @@
+// Inputs
+// Styles for text inputs
+// -------------------------------------------------------------------
+
+#{$all-text-inputs} {
+  border: 2px solid $grey-mid-light;
+  border-radius: $border-radius;
+  padding: 1em;
+  outline: none;
+  font-size: 1.2em;
+  width: 100%;
+  min-width: 300px;
+  transition: 0.3s;
+  background: $white;
+  z-index: 99;
+
+  &:valid ~ label {
+  	top: -2.15em;
+    transition: 0.5s;
+    z-index: -1;
+  }
+}
+
+#{$all-text-inputs-active},
+#{$all-text-inputs-focus} {
+  border: 2px solid $dark;
+
+  ~ label {
+    transition: 0.5s;
+  }
+}
+
+.mc-field-group {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+#mce-success-response {
+  color: $grey-mid;
+  padding: 1rem 0;
+}
+    

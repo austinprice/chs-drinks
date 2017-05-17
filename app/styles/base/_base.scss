@@ -1,0 +1,58 @@
+// Base
+// All base defaults and styles
+// -------------------------------------------------------------------
+
+// Defaults
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(255,255,255,0.01) 0 0 1px;
+
+  // &::after {
+  // 	content: url('/assets/images/levels.svg');
+  // }
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $grey-light;
+  color: $black;
+  max-width: 90em;
+  padding: 0;
+  overflow-x: hidden;
+  padding: 3em 0 0;
+  margin: 0;
+
+  // &:after {
+  //   content: url('../../assets/images/color-band.svg');
+  //   top: 0;
+  //   height: 10px;
+  //   width: 100vw;
+  //   position: absolute;
+  // }
+}
+
+// hr
+hr {
+  border-top: 1px solid $grey-light;
+  border-left: none;
+}
+
+
+
+// Responsive Styles
+// -------------------------------------------------------------------
+
+// --> Small Breakpoint
+@media (max-width: $small-break) {
+
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+}
+// <-- End Small Breakpoint

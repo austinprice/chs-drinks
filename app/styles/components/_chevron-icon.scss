@@ -1,0 +1,12 @@
+// Chevron Icon
+// Base styles for chevron icon
+// -------------------------------------------------------------------
+
+.chevron-icon {
+  @include chevron-icon($yellow);
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-size: 5.5rem;
+  width: 20px;
+  height: 20px;
+}

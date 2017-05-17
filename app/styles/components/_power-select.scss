@@ -1,0 +1,29 @@
+// Power Select
+// All styles for ember-power-select
+// -------------------------------------------------------------------
+
+
+.ember-power-select-trigger {
+  border: none !important;
+  background: $grey-light !important;
+  font-size: 1.75rem !important;
+  color: $yellow !important;
+  font-weight: 600 !important;
+  outline: none;
+  border-bottom: 1px dashed $grey-mid-light !important;
+}
+
+.ember-power-select-dropdown {
+  &.ember-basic-dropdown-content {
+
+    &--above, &--below {
+      border: none !important;
+      background: $grey-light !important;
+      font-size: 1.25rem !important;
+    }
+  }
+
+  .ember-power-select-option[aria-current="true"] {
+    background-color: $yellow;
+  }
+}

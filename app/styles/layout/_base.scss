@@ -1,0 +1,140 @@
+// --------------------------------------------------------------------
+// Base Layout
+// Styles for general app layout, including containers, wrapper, etc.
+// --------------------------------------------------------------------
+
+
+// Grid
+// --------------------------------------------------------------------
+
+$sidebar-width: 350px;
+
+#sidebar {
+  position: fixed;
+  width: $sidebar-width;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 30px 0 0 70px;
+}
+
+// Wrapper for sidebar/container
+.content {
+  overflow: hidden;
+}
+
+// Content container
+.container {
+  padding: $padding-big;
+  width: 100%;
+}
+
+.row {
+  padding: $padding 0;
+}
+
+.main {
+  padding: $padding-big 5em $padding-big 5em;
+  clear: both;
+  width: calc(100% - #{$sidebar-width});
+  float: right;
+  min-height: 100vh;
+}
+
+.header {
+  border-bottom: none;
+  margin: 0;
+  padding: 0 0 2em 0;
+}
+
+.main {
+  padding: 3em;
+}
+
+
+// Content Sections
+// --------------------------------------------------------------------
+section {
+  padding: $padding-big 0;
+}
+
+// Content wrapper to add padding
+.wrapper {
+  display: block;
+  overflow: hidden;
+  padding: $padding-mid;
+}
+
+
+// Footer
+.footer {
+  padding: 3em 0;
+  background-image: url('/img/beer.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  width: 100vw;
+  overflow: hidden;
+  height: 15vw;
+  position: absolute;
+  left:  0;
+}
+
+
+
+// Responsive Style
+// --------------------------------------------------------------------
+// Mid Breakpoint
+@media (max-width: $mid-break) {
+
+  #sidebar {
+    width: 300px;
+    padding: 30px 0 0 50px;
+  }
+
+  .main {
+    padding: $padding-big;
+    width: calc(100% - 300px);
+  }
+}
+
+
+// Small Breakpoint
+@media (max-width: $small-break) {
+  .container {
+    padding: $padding-big $padding-small;
+  }
+
+  .contact-info {
+    .row {
+      text-align: center;
+    }
+  }
+
+  #sidebar {
+    width: 100vw;
+    position: relative;
+    padding: 0;
+  }
+
+  .header {
+    text-align: center;
+    padding: 0 0 $padding 0;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .main {
+    width: 100vw;
+    float: none;
+    padding: 1.5em;
+  }
+
+  .footer {
+    background-size: cover;
+    height: 200px;
+  }
+}
+// --------------------------------------------------------------------

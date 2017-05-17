@@ -1,0 +1,100 @@
+// --------------------------------------------------------------------
+// Base Layout
+// Styles for general app layout, including containers, wrapper, etc.
+// --------------------------------------------------------------------
+
+
+// Grid
+// --------------------------------------------------------------------
+
+.brewery-section {
+  padding: $padding 0;
+
+  .brewery-list {
+    padding: $padding 0 0;
+
+    .brewery {
+      padding: $padding-big;
+      background: #fff;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 2px 2px 11px rgba(0,0,0,0.15);
+
+      p {
+        margin: 0.5rem 0;
+      }
+
+      .address {
+
+        p {
+          margin: 0;
+          font-size: 0.85rem;
+          font-style: italic;
+          color: $grey-mid-light;
+        }
+      }
+
+      .hours-container {
+        background: $grey-light;
+        border-radius: 4px;
+        //padding: 1rem;
+        overflow: hidden;
+        color: $grey-mid;
+        margin-top: $margin;
+        transition: $transition;
+
+        h4 {
+          padding: 1rem;
+          transition: $transition;
+          cursor: pointer;
+
+          &:hover {
+            background: mix($grey-light, $dark, 97%);
+          }
+        }
+
+        .days-container {
+          padding: 0 $padding $padding;
+        }
+
+        .day-container {
+          width: 100%;
+          display: block;
+          padding: 0.25rem 0;
+          height: auto;
+          overflow: hidden;
+
+          .day {
+            float: left;
+            max-width: 40%;
+            font-family: $display;
+            text-transform: uppercase;
+            font-weight: 700;
+          }
+
+          .hours {
+            float: right;
+            max-width: 60%;
+            font-style: italic;
+
+            &.open {
+              font-style: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive Style
+// --------------------------------------------------------------------
+
+// Small Breakpoint
+@media (max-width: $small-break) {
+  .location-header {
+    text-align: center;
+    padding: 0 0 $padding 0 !important;
+  }
+}
+// --------------------------------------------------------------------

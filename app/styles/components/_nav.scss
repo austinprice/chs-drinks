@@ -1,0 +1,40 @@
+// Nav
+// Styles for sidebar navigation
+// -------------------------------------------------------------------
+
+.nav {
+  li {
+  	font-family: $display;
+  	font-weight: 900;
+  	font-size: 1.2em;
+  	color: $dark;
+  	list-style-type: none;
+  	padding: 2px 0;
+  	transition: 0.3s;
+  	color: $grey-mid-light;
+  	display: inline-block;
+    clear: both;
+    float: left;
+
+  	&:hover {
+  		cursor: pointer;
+  		color: $active;
+  	}
+
+  	&.active {
+  		color: $active;
+  	}
+  }
+}
+
+
+
+// Responsive Style
+// --------------------------------------------------------------------
+
+// Small Breakpoint
+@media (max-width: $small-break) {
+  .nav {
+  	display: none;
+  }
+}

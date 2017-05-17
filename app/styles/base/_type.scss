@@ -1,0 +1,126 @@
+// Type
+// All base font and typography styles
+// -------------------------------------------------------------------
+
+
+// Defaults
+body {
+  line-height: $base-line-height;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-reference;
+  font-style: normal;
+}
+
+
+// Headers
+// --------------------------------------------------------------------
+
+h1,h2,h3,h4,h5,h6 {
+  color: $dark;
+  line-height: 1.75;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p,ul,a {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: $display;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.25;
+
+}
+
+h2 {
+  line-height: $base-line-height;
+  font-family: $display;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h3 {
+  font-family: $display;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $grey-mid;
+}
+
+h4 {
+  font-family: $display;
+  font-size: 1.25rem;
+  text-transform: none;
+}
+
+// --------------------------------------------------------------------
+
+
+
+// Body text
+// --------------------------------------------------------------------
+
+// Paragraph styles
+p {
+  line-height: $base-line-height;
+  color: $grey-mid;
+  font-family: $base-font-family;
+  font-size: 1.35rem;
+  font-weight: $body-reg;
+  text-align: left;
+  margin-top: 0.5rem;
+
+  &.small {
+  	font-size: 1rem;
+    font-style: italic;
+    font-weight: 600;
+  }
+}
+
+// Labels
+label {
+  color: $dark;
+  font-family: $display;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  &.signup {
+    @extend label;
+    position: absolute;
+    left: 1em;;
+    top: 1.5em;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+a {
+  color: $active;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    color: mix($active, $dark, 90%);
+  }
+}
+
+
+// Responsive Style
+// --------------------------------------------------------------------
+
+// Small Breakpoint
+@media (max-width: $small-break) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  h4,p {
+    font-size: 1rem;
+  }
+}

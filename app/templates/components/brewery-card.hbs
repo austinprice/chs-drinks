@@ -1,0 +1,24 @@
+<div class="brewery">
+  <h1><a href={{brewery.website}} target="_blank">{{brewery.name}}</a></h1>
+  <div class="address">
+    <h4>{{brewery.location}}</h4>
+    <p>{{brewery.address}}</p>
+  </div>
+  {{!-- <button {{action 'toggleHours'}}>Show Hours</button> --}}
+  <p>{{brewery.description}}</p>
+  <div class="hours-container">
+    <h4 {{action 'toggleHours'}}>Brewery Hours</h4>
+    {{#if showHours}}
+      <div class="days-container">
+        {{#each brewery.hours as |day|}}
+          <div class="day-container">
+            <div class="day">{{day.name}}</div>
+            <div class="hours {{if day.open 'open'}}">{{#if day.open}}{{format-hours day.open}} - {{format-hours day.close}}{{else}}Closed{{/if}}</div>
+          </div>
+        {{/each}}
+      </div>
+    {{/if}}
+  </div>
+</div>
+
+{{yield}}

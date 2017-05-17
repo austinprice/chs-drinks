@@ -1,0 +1,104 @@
+// --------------------------------------------------------------------
+// Variables
+// All global variables for the app
+// --------------------------------------------------------------------
+
+// Base em reference
+$base-reference: 16px;
+
+// Colors
+// All colors in the app
+// --------------------------------------------------------------------
+
+// Colors
+$primary: #FEC206;
+$active: $primary;
+$inactive: #D1DEEB;
+$red: #ED6A67;
+$yellow: #FEC206;
+$yellow-dark: #C28B00;
+
+// Greyscale
+$white: #ffffff;
+$grey-light: #FAFAFF;
+$grey-mid: #67778E;
+$grey-mid-light: #A9B2BF;
+$dark: #320046;
+$black: $dark;
+
+
+// Tints
+$primary-light: mix($primary, $white, 30%);
+$primary-dark: mix($primary, $black, 85%);
+$primary-darker: mix($primary, $black, 60%);
+
+// Hover & Active States
+$primary-hover: mix($primary, $white, 85%);
+$active-hover: $white;
+$red-hover: mix($red, $white, 75%);
+$white-hover: mix($white, $black, 98%);
+
+// --------------------------------------------------------------------
+
+
+
+// Fonts
+// All base font styles
+// --------------------------------------------------------------------
+
+// Import Google Web Fonts
+@import 'https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Source+Sans:300,400,500,600,700,800';
+
+// Font Stacks
+$display: 'Dosis', sans-serif !default;
+$body: 'Source Sans Pro', 'Helvetica', sans-serif !default;
+
+// Font Weights
+$body-reg: 400;
+$body-bold: 800;
+
+// Defaults
+$base-font-family: $body;
+$base-font-color: $grey-mid;
+$base-font-size: $base-reference;
+$base-line-height: 1.65;
+
+// Helpers
+$letter-spacing-wide: 2px;
+
+// --------------------------------------------------------------------
+
+
+// Utilities
+// --------------------------------------------------------------------
+
+// Margins
+$margin: 1rem !default;
+$margin-small: $margin / 1.5;
+$margin-big: $margin * 2;
+
+// Padding
+$padding: 1rem !default;
+$padding-small: $padding / 1.5;
+$padding-mid: $padding * 1.5;
+$padding-big: $padding * 2;
+
+
+// Button Shadows
+$btn-shadow: 0px 1px 9px rgba(29,33,42,0.35);
+$btn-shadow-hover: 0px 1px 12px rgba(29,33,42,0.50);
+
+// General Settings
+$global-radius: 8px;
+$border-radius: $global-radius;
+$transition: .3s ease-in-out;
+
+// --------------------------------------------------------------------
+
+
+// Breakpoints
+// --------------------------------------------------------------------
+
+$big-break: 1100px;
+$mid-break: 1020px;
+$small-break: 720px;

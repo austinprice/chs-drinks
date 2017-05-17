@@ -1,0 +1,41 @@
+//
+// Logo
+// Class for the full-color Pigeon logo
+// --------------------------------------------------------------------
+
+.color-band {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  min-height: 6px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto $margin auto;
+  width: 100%;
+  height: 190px;
+  background-image: url('/img/chs-drinks_logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+}
+
+
+
+// Responsive Style
+// --------------------------------------------------------------------
+
+// Small Breakpoint
+@media (max-width: $small-break) {
+  .logo {
+  	width: 100vw;
+    height: 150px;
+    background-position: top center;
+    margin: 0 auto;
+  }
+}
