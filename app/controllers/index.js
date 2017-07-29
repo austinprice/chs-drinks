@@ -3,6 +3,40 @@ const { computed } = Ember;
 
 export default Ember.Controller.extend({
 
+  init() {
+    this._super(...arguments);
+    var daysList = this.get('daysList');
+    var date = new Date();
+    let day = daysList[date.getDay()];
+    if (date.getDay() === 0) {
+      day = daysList[7];
+    }
+    var hour = date.getHours() * 100;
+
+    this.set('hourFilter', hour);
+    this.set('dayFilter', day);
+
+    let h = new Date().getHours();
+    let m = 'PM'
+    if (h > 12) {
+      var hourNumber = h - 12;
+    } else if (h === 11) {
+      var hourNumber = h;
+      m = 'AM'
+    } else {
+      var hourNumber = 'all'
+    }
+
+    let hourName = hourNumber.toString() + ':00 ' + m;
+
+    if (h < 11) {
+      hourName = 'Any Time';
+    }
+    var hourFilter = {name: hourName, value: (h * 100)};
+
+    this.set('hourFilter', hourFilter);
+  },
+
   locationFilter: 'All Charleston',
   locationsList: ['All Charleston', 'Downtown', 'James Island', 'Johns Island', 'Mount Pleasant', 'North Charleston', 'West Ashley'],
 
@@ -15,64 +49,25 @@ export default Ember.Controller.extend({
   sortProps: ['name'],
   sortedBreweries: computed.sort('breweries', 'sortProps'),
 
-  dayIsSelected: false,
-  // dayIsSelected: computed.equal('dayFilter.close', "all"),
+  dayIsSelected: computed.oneWay('dayFilter', function() {
+    if (dayFilter.name === 'Any Day') {
+      return false;
+    } else {
+      return true;
+    }
+  }),
 
-  // breweriesArray: [],
-  //
-  // filteredBreweriesByLocation: computed('sortedBreweries', 'locationFilter', function() {
-  //   var locationFilter = this.get('locationFilter');
-  //   var breweries = this.get('sortedBreweries');
-  //
-  //    if (locationFilter === 'All Charleston') {
-  //      return breweries;
-  //    } else {
-  //      return breweries.filterBy('location', (locationFilter));
-  //    }
-  // }),
-  //
-  // filteredBreweries: computed('filteredBreweriesByLocation', 'dayFilter', function() {
-  //   var dayFilter = this.get('dayFilter');
-  //   var breweries = this.get('filteredBreweriesByLocation');
-  //
-  //   if (dayFilter.open === 'all') {
-  //     return breweries;
-  //   } else {
-  //     return breweries.filterBy(dayFilter.open);
-  //   }
-  // }),
-  //
-  // filteredBreweriesByHour: computed('filteredBreweries', 'hourFilter', function() {
-  //
-  //   var dayFilter = this.get('dayFilter');
-  //   var hourFilter = this.get('hourFilter');
-  //   var breweries = this.get('filteredBreweries');
-  //
-  //   let breweriesArray = this.get('breweriesArray');
-  //
-  //   breweriesArray.clear();
-  //
-  //   breweries.forEach(function (brewery) {
-  //     // let hours = brewery.hours.findBy('name', dayFilter.name).objectAt(0);
-  //     //
-  //     // if (hourFilter.value > hours.open) {
-  //     //   breweriesArray.pushObject(brewery);
-  //     // }
-  //   });
-  //
-  //
-  //
-  //   console.log(breweriesArray);
-  //
-  //   if (hourFilter.value === 'all') {
-  //     return breweries;
-  //   } else if (dayFilter.open === 'all') {
-  //     return breweries;
-  //   } else {
-  //     return breweriesArray;
-  //   }
-  //
-  // }),
+  initialDay: computed('daysList', function() {
+    var d = new Date();
+    var daysList = this.get('daysList');
+    return daysList[d.getDay()].name;
+  }),
+
+  initialHours: computed('initialDay', function() {
+    var d = new Date();
+    var daysList = this.get('daysList');
+    return daysList[d.getDay()].name;
+  }),
 
 
   actions: {
@@ -82,7 +77,7 @@ export default Ember.Controller.extend({
 
 
       this.set('locationFilter', location);
-      this.send("updateHoursFilter", { hour: hour, day: day, location: location });
+      this.send('updateHoursFilter', { hour: hour, day: day, location: location });
     },
 
     updateDayFilter(day) {
@@ -101,7 +96,7 @@ export default Ember.Controller.extend({
       var hour = this.get('hourFilter.value');
 
 
-      this.send("updateHoursFilter", { hour: hour, day: dayName, location: location });
+      this.send('updateHoursFilter', { hour: hour, day: dayName, location: location });
     },
 
     updateHourFilter(hour) {
@@ -109,7 +104,7 @@ export default Ember.Controller.extend({
       this.set('hourFilter', hour);
       var location = this.get('locationFilter');
 
-      this.send("updateHoursFilter", { hour: hour.value, day: day, location: location });
+      this.send('updateHoursFilter', { hour: hour.value, day: day, location: location });
     }
   }
 
