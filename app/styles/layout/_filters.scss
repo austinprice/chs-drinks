@@ -7,6 +7,8 @@
   padding: $padding;
   border-radius: 4px;
   font-family: $display;
+  max-width: 90vw;
+  margin: 0 auto;
 
   .filter-text {
     color: $grey-mid-light;
@@ -52,34 +54,34 @@
 }
 
 @media (min-width: $mid-break) {
-  .filters-container {
-    .location {
-      display: flex;
-      align-items: center;
-
-      .filter-text {
-        display: inline-block;
-        width: 40%;
-        padding: 0;
-      }
-
-      .ember-power-select-trigger {
-        display: inline-block !important;
-        width: 58%;
-        float: right !important;
-      }
-    }
-
-    .day {
-
-      .filter-text {
-        width: 40%;
-      }
-      .ember-power-select-trigger {
-        display: inline-block !important;
-        width: 58%;
-        float: right;
-      }
-    }
-  }
+  //.filters-container {
+  //  .location {
+  //    display: flex;
+  //    align-items: center;
+  //
+  //    .filter-text {
+  //      display: inline-block;
+  //      width: 40%;
+  //      padding: 0;
+  //    }
+  //
+  //    .ember-power-select-trigger {
+  //      display: inline-block !important;
+  //      width: 58%;
+  //      float: right !important;
+  //    }
+  //  }
+  //
+  //  .day {
+  //
+  //    .filter-text {
+  //      width: 40%;
+  //    }
+  //    .ember-power-select-trigger {
+  //      display: inline-block !important;
+  //      width: 58%;
+  //      float: right;
+  //    }
+  //  }
+  //}
 }

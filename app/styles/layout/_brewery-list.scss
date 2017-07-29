@@ -1,10 +1,6 @@
 // --------------------------------------------------------------------
-// Base Layout
-// Styles for general app layout, including containers, wrapper, etc.
-// --------------------------------------------------------------------
-
-
-// Grid
+// Brewery List
+// Styles for laying out the brewery list
 // --------------------------------------------------------------------
 
 .brewery-section {
@@ -14,7 +10,7 @@
     padding: $padding 0 0;
 
     .brewery {
-      padding: $padding-big;
+      padding: $padding-mid;
       background: #fff;
       margin-bottom: 2rem;
       border-radius: 10px;
@@ -28,7 +24,7 @@
 
         p {
           margin: 0;
-          font-size: 0.85rem;
+          font-size: 1rem;
           font-style: italic;
           color: $grey-mid-light;
         }
@@ -95,6 +91,22 @@
   .location-header {
     text-align: center;
     padding: 0 0 $padding 0 !important;
+  }
+
+  .brewery-section {
+
+    .brewery-list {
+
+      .brewery {
+
+        .address {
+           p {
+             font-size: 0.85rem;
+           }
+        }
+      }
+    }
+
   }
 }
 // --------------------------------------------------------------------

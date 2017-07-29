@@ -1,5 +1,9 @@
-<!-- Content Section -->
-<div class="col-sm-12">
+<div class="content">
+  <div id="sidebar">
+    <header class="header cf" role="banner">
+      <div class="logo"></div>
+      <p class="small">All the Charleston breweries</p>
+    </header>
     <section class="filters-container">
       <span class="location">
         <span class="filter-text">Show me breweries in</span>
@@ -25,60 +29,48 @@
           {{day.name}}
         {{/power-select}}
       </span>
-      {{!-- <span class="hour">
+      {{#if dayIsSelected}}
+        <span class="hour">
         <span class="filter-text">at</span>
-        {{#power-select
-          options=hoursList
-          searchEnabled=false
-          selected=hourFilter
-          onchange=(action "updateHourFilter")
-        as |hour|
-        }}
-          {{hour.name}}
-        {{/power-select}}
-      </span> --}}
+          {{#power-select
+            options=hoursList
+            searchEnabled=false
+            selected=hourFilter
+            onchange=(action "updateHourFilter")
+          as |hour|
+          }}
+            {{hour.name}}
+          {{/power-select}}
+      </span>
+      {{/if}}
+
     </section>
-    <section class="results-count">
-      <p class="italic">{{filteredBreweries.length}} breweries</p>
-    </section>
-    <section class="brewery-section">
-      <div class="brewery-list">
-        {{#each filteredBreweries as |brewery|}}
-           {{brewery-card brewery=brewery}}
-        {{/each}}
-      </div>
-    </section>
-</div>
-<div class="newsletter-signup">
-  <div class="row">
-    <div class="col-sm-10 col-lg-8">
-      <h1>Stay in the loop</h1>
-      <p>Sign up for our newsletter to find out about new breweries, events, and more beer-related news.</p>
-    </div>
   </div>
-  <div class="row">
-    <div class="col-sm-10 col-lg-6">
-      <!-- Begin MailChimp Signup Form -->
-      <div id="mc_embed_signup">
-        <form action="https://charlestondrinks.us15.list-manage.com/subscribe/post?u=217dda93b118505c769ec54a6&amp;id=aa1066fe1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <div class="mc-field-group">
-              <input type="text" value="" name="EMAIL" minlength="1" required="true" placeholder="Enter your email..." class="required email" id="mce-EMAIL">
-              <label for="EMAIL" class="signup">Email Address</label>
-            </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_217dda93b118505c769ec54a6_aa1066fe1b" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Cheers!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-          </div>
-        </form>
-      </div>
-      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-      <!--End mc_embed_signup-->
+
+  <main class="main" role="main">
+
+    <div class="col-sm-12">
+      <section class="results-count">
+        <h4></h4>
+        <p>There are <strong>{{sortedBreweries.length}}</strong> breweries in <strong>{{locationFilter}}</strong> open <strong>{{dayFilter.name}}</strong> at <strong>{{hourFilter.name}}</strong></p>
+      </section>
+      <section class="brewery-section">
+        <div class="brewery-list">
+          {{#each sortedBreweries as |brewery|}}
+            {{brewery-card brewery=brewery}}
+          {{/each}}
+        </div>
+      </section>
     </div>
-  </div>
+    {{newsletter-signup
+      header="Find out what's on tap"
+      description="Right now, Charleston Drinks is a handy, searchable, list of breweries around Charleston. But we're planning to have much more on tap. Sign up make sure you don't miss any new stuff!"
+    }}
+  </main>
 </div>
+
+
+<!-- Content Section -->
+
 
 {{outlet}}

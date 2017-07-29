@@ -4,26 +4,11 @@
 // --------------------------------------------------------------------
 
 
-// Grid
-// --------------------------------------------------------------------
-
-$sidebar-width: 350px;
-
-#sidebar {
-  position: fixed;
-  width: $sidebar-width;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  padding: 30px 0 0 70px;
-}
-
-// Wrapper for sidebar/container
+// Content container
 .content {
   overflow: hidden;
 }
 
-// Content container
 .container {
   padding: $padding-big;
   width: 100%;
@@ -34,7 +19,7 @@ $sidebar-width: 350px;
 }
 
 .main {
-  padding: $padding-big 5em $padding-big 5em;
+  padding: $padding 5em $padding-big 5em;
   clear: both;
   width: calc(100% - #{$sidebar-width});
   float: right;
@@ -47,10 +32,11 @@ $sidebar-width: 350px;
   padding: 0 0 2em 0;
 }
 
-.main {
-  padding: 3em;
-}
 
+// Responsive Utilities
+.mobile {
+  display: none;
+}
 
 // Content Sections
 // --------------------------------------------------------------------
@@ -87,11 +73,6 @@ section {
 // Mid Breakpoint
 @media (max-width: $mid-break) {
 
-  #sidebar {
-    width: 300px;
-    padding: 30px 0 0 50px;
-  }
-
   .main {
     padding: $padding-big;
     width: calc(100% - 300px);
@@ -111,15 +92,9 @@ section {
     }
   }
 
-  #sidebar {
-    width: 100vw;
-    position: relative;
-    padding: 0;
-  }
-
   .header {
     text-align: center;
-    padding: 0 0 $padding 0;
+    padding: $padding 0;
 
     p {
       text-align: center;
@@ -129,7 +104,7 @@ section {
   .main {
     width: 100vw;
     float: none;
-    padding: 1.5em;
+    padding: 1.5rem;
   }
 
   .footer {
@@ -138,3 +113,10 @@ section {
   }
 }
 // --------------------------------------------------------------------
+
+// Small Breakpoint
+@media (max-width: $small-break) {
+  .main {
+    padding: $padding;
+  }
+}

@@ -33,7 +33,9 @@
 // Layout
 @import
   'layout/base',
-  'layout/_filters',
+  'layout/sidebar',
+  'layout/filters',
+  'layout/newsletter-signup',
   'layout/brewery-list';
 
 @import "ember-power-select";

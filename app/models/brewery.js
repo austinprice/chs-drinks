@@ -1,4 +1,5 @@
 import DS from 'ember-data';
+import Ember from 'ember';
 
 export default DS.Model.extend({
 
@@ -9,28 +10,5 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   location: DS.attr('string'),
   hours: DS.attr(),
-
-  // break down each day's hours for easy filtering later
-  monday: Ember.computed('hours', function() {
-    return this.get('hours').objectAt(0);
-  }),
-  tuesday: Ember.computed('hours', function() {
-    return this.get('hours').objectAt(1);
-  }),
-  wednesday: Ember.computed('hours', function() {
-    return this.get('hours').objectAt(2);
-  }),
-  thursday: Ember.computed('hours', function() {
-    return this.get('hours').objectAt(3);
-  }),
-  friday: Ember.computed('hours', function() {
-    return this.get('hours').objectAt(4);
-  }),
-  saturday: Ember.computed('hours', function() {
-    return this.get('hours').objectAt(5);
-  }),
-  sunday: Ember.computed('hours', function() {
-    return this.get('hours').objectAt(6);
-  })
 
 });

@@ -20,13 +20,23 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+
+    // contentSecurityPolicy: {
+    //   'default-src': "'none'",
+    //   'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
+    //   'font-src': "'self'",
+    //   'connect-src': "'self' http://app.charlestondrinks.com",
+    //   'img-src': "'self'",
+    //   'report-uri':"'http://app.charlestondrinks.com'",
+    //   'style-src': "'self' 'unsafe-inline'",
+    //   'frame-src': "'none'"
+    // }
   };
 
   if (environment === 'development') {
-    ENV['ember-cli-mirage'] = {
-      enabled: true
-    };
+    ENV.host = "http://app.charlestondrinks.com";
+
 
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -47,6 +57,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.host = "http://app.charlestondrinks.com";
 
   }
 

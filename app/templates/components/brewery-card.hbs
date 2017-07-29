@@ -10,12 +10,34 @@
     <h4 {{action 'toggleHours'}}>Brewery Hours</h4>
     {{#if showHours}}
       <div class="days-container">
-        {{#each brewery.hours as |day|}}
           <div class="day-container">
-            <div class="day">{{day.name}}</div>
-            <div class="hours {{if day.open 'open'}}">{{#if day.open}}{{format-hours day.open}} - {{format-hours day.close}}{{else}}Closed{{/if}}</div>
+            <div class="day">Monday</div>
+            <div class="hours {{if brewery.hours.monday.open 'open'}}">{{#if brewery.hours.monday.open}}{{format-hours brewery.hours.monday.open}} - {{format-hours brewery.hours.monday.close}}{{else}}Closed{{/if}}</div>
           </div>
-        {{/each}}
+        <div class="day-container">
+          <div class="day">Tuesday</div>
+          <div class="hours {{if brewery.hours.tuesday.open 'open'}}">{{#if brewery.hours.tuesday.open}}{{format-hours brewery.hours.tuesday.open}} - {{format-hours brewery.hours.tuesday.close}}{{else}}Closed{{/if}}</div>
+        </div>
+        <div class="day-container">
+          <div class="day">Wednesday</div>
+          <div class="hours {{if brewery.hours.wednesday.open 'open'}}">{{#if brewery.hours.wednesday.open}}{{format-hours brewery.hours.wednesday.open}} - {{format-hours brewery.hours.wednesday.close}}{{else}}Closed{{/if}}</div>
+        </div>
+        <div class="day-container">
+          <div class="day">Thursday</div>
+          <div class="hours {{if brewery.hours.thursday.open 'open'}}">{{#if brewery.hours.thursday.open}}{{format-hours brewery.hours.thursday.open}} - {{format-hours brewery.hours.thursday.close}}{{else}}Closed{{/if}}</div>
+        </div>
+        <div class="day-container">
+          <div class="day">Friday</div>
+          <div class="hours {{if brewery.hours.friday.open 'open'}}">{{#if brewery.hours.friday.open}}{{format-hours brewery.hours.friday.open}} - {{format-hours brewery.hours.friday.close}}{{else}}Closed{{/if}}</div>
+        </div>
+        <div class="day-container">
+          <div class="day">Saturday</div>
+          <div class="hours {{if brewery.hours.saturday.open 'open'}}">{{#if brewery.hours.saturday.open}}{{format-hours brewery.hours.saturday.open}} - {{format-hours brewery.hours.saturday.close}}{{else}}Closed{{/if}}</div>
+        </div>
+        <div class="day-container">
+          <div class="day">Sunday</div>
+          <div class="hours {{if brewery.hours.sunday.open 'open'}}">{{#if brewery.hours.sunday.open}}{{format-hours brewery.hours.sunday.open}} - {{format-hours brewery.hours.sunday.close}}{{else}}Closed{{/if}}</div>
+        </div>
       </div>
     {{/if}}
   </div>
