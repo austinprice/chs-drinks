@@ -18,13 +18,14 @@ export default Ember.Controller.extend({
 
     let h = new Date().getHours();
     let m = 'PM'
+    let hourNumber;
     if (h > 12) {
-      var hourNumber = h - 12;
+      hourNumber = h - 12;
     } else if (h === 11) {
-      var hourNumber = h;
+      hourNumber = h;
       m = 'AM'
     } else {
-      var hourNumber = 'all'
+      hourNumber = 'all'
     }
 
     let hourName = hourNumber.toString() + ':00 ' + m;
@@ -50,7 +51,7 @@ export default Ember.Controller.extend({
   sortedBreweries: computed.sort('breweries', 'sortProps'),
 
   dayIsSelected: computed.oneWay('dayFilter', function() {
-    if (dayFilter.name === 'Any Day') {
+    if (this.get('dayFilter.name') === 'Any Day') {
       return false;
     } else {
       return true;
@@ -82,7 +83,6 @@ export default Ember.Controller.extend({
 
     updateDayFilter(day) {
       if (day.open === 'all') {
-        var hoursList = this.get('hoursList');
         this.set('hourFilter', {name: 'Any Time', value: 'all'});
         this.set('dayIsSelected', false);
       } else {

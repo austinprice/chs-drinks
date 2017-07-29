@@ -4,11 +4,12 @@
 
 
 .ember-power-select-trigger {
-  border: none !important;
   background: $grey-light !important;
-  font-size: 1.75rem !important;
+  border: none !important;
+  border-radius: 0 !important;
   color: $yellow !important;
   cursor: pointer;
+  font-size: 1.75rem !important;
   font-weight: 600 !important;
   outline: none;
   border-bottom: 1px dashed $grey-mid-light !important;
